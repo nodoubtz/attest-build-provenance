@@ -38,7 +38,11 @@ jobs:
 
       - name: Lint Codebase
         id: super-linter
+dependabot/github_actions/actions-minor-8f55c9ac81
         uses: super-linter/super-linter/slim@v7.3.0
+=======
+        uses: super-linter/super-linter/slim@v7.4.0
+main
         env:
           DEFAULT_BRANCH: main
           FILTER_REGEX_EXCLUDE: dist/**/*
@@ -46,6 +50,11 @@ jobs:
           TYPESCRIPT_DEFAULT_STYLE: prettier
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_JAVASCRIPT_STANDARD: false
+          VALIDATE_TYPESCRIPT_ES: false
           VALIDATE_TYPESCRIPT_STANDARD: false
           VALIDATE_JSCPD: false
           VALIDATE_YAML_PRETTIER: false
+
+      - name: Run eslint
+        run: npm run lint:eslint
+        working-directory: .
