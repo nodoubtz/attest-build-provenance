@@ -1,3 +1,5 @@
+[![Continuous Integration](https://github.com/nodoubtz/attest-build-provenance/actions/workflows/ci.yml/badge.svg)](https://github.com/nodoubtz/attest-build-provenance/actions/workflows/ci.yml)
+
 # attest-build-provenance
 
 A tool for building, attesting, and securing build provenance in your software projects. This repository provides features for automating the attestation of build artifacts, detecting duplicate code, error management, and securing sensitive code through best practices.
