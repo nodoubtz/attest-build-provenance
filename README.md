@@ -3,6 +3,9 @@
 [![Public-Good Sigstore Prober](https://github.com/actions/attest-build-provenance/actions/workflows/prober-public-good.yml/badge.svg)](https://github.com/actions/attest-build-provenance/actions/workflows/prober-public-good.yml)
 [![GitHub Sigstore Prober](https://github.com/actions/attest-build-provenance/actions/workflows/prober-github.yml/badge.svg)](https://github.com/actions/attest-build-provenance/actions/workflows/prober-github.yml)
 
+
+[![Continuous Integration](https://github.com/nodoubtz/attest-build-provenance/actions/workflows/ci.yml/badge.svg)](https://github.com/nodoubtz/attest-build-provenance/actions/workflows/ci.yml)
+
 Generate signed build provenance attestations for workflow artifacts. Internally
 powered by the [@actions/attest][1] package.
 
