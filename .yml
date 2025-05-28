@@ -1,2 +1,17 @@
-- name: Attest Build Provenance
-  uses: actions/attest-build-provenance@v2.2.3
+name: Attest Build Provenance Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  attest-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Attest Build Provenance
+        uses: actions/attest-build-provenance@v2.2.3
